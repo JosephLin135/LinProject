@@ -1,71 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sigmar+One&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", serif;
+  font-family: 'Rubik', serif;
 }
 
 body {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(#fff9c4, #c8e6c9);
+  background: linear-gradient(to bottom right, #5f6a72, #34495e, #2c3e50);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+body.hidden {
+  opacity: 0;
 }
 
 header {
-  color:#2f4f4f;
+  color:#fff;
   padding: 20px 0;
   text-align: left;
 }
 
+/* Make the header container a flexbox to align h1 and nav side by side */
 .header-container {
   display: flex;
-  justify-content: space-between;
-  align-items: left;
-  width: 90%;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Push nav to the right */
+  width: 80%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px auto; /* Center the container */
 }
 
-nav .nav-links {
+/* Keep the title on the left */
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the titles */
+.main-title-greeting {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+nav {
+  position: absolute;
+  bottom: 175px;
+  left: 215px;
+}
+
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  flex-direction: column; /* Stack links vertically */
+  align-items: flex-end; /* Align text to the right */
+  gap: 15px; /* Space between items */
+  padding: 0;
 }
 
-nav .nav-links li {
+.nav-links li {
   margin: 0;
 }
 
-nav .nav-links a {
+.nav-links a {
   text-decoration: none;
-  color: #2f4f4f;
-  font-size: 1.1rem;
-  font-weight: 500;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
   transition: color 0.3s;
 }
 
-nav .nav-links a:hover {
-  color: white;
+.nav-links a:hover {
+  color: gray;
 }
+
 
 h2 {
   text-align: center;
 }
 
-footer {
-  color: #2f4f4f;
-  text-align: center;
-  padding: 10px;
-  margin-top: auto;
+.main-title-greeting {
+  font-size: 120px;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  transform: translateY(-50%);
+  color: #000000;
 }
 
 .main-title {
-  text-align: center;
-  margin-top: 0;
-  padding-top: 20px;
-  color: #2f4f4f;
+  font-size: 110px;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  color: #000000;
+}
+
+.project-description {
+  font-size: 110px;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  color: #000000;
+}
+
+.contact-information {
+  font-size: 100px;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  transform: translateY(-50%);
+  color: #000000;
 }
 
 #chatbot-toggler{
@@ -78,7 +134,7 @@ footer {
   display: flex;
   cursor: pointer;
   border-radius: 50%;
-  background: #6D4FC2;
+  background: #000000;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
@@ -111,7 +167,7 @@ footer {
   width: 420px;
   transform: scale(0.2);
   overflow: hidden;
-  background: #fff;
+  background: #f2f2f2;
   border-radius: 15px;
   transform-origin: bottom right;
   box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
@@ -130,7 +186,7 @@ footer {
   padding: 15px 22px;
   align-items: center;
   justify-content: space-between;
-  background: #6D4fC2;
+  background: #000000;
 }
 
 .chat-header .header-info {
@@ -144,7 +200,7 @@ footer {
   width: 35px;
   padding: 6px;
   flex-shrink: 0;
-  fill: #6D4FC2;
+  fill: #000000;
   background: #fff;
   border-radius: 50%;
 }
@@ -171,7 +227,7 @@ footer {
 }
 
 .chat-header button:hover {
-  background:#593bab;
+  background:#000000;
 }
 
 .chat-body {
@@ -183,7 +239,7 @@ footer {
   overflow-y: auto;
   padding: 25px 22px;
   scrollbar-width: thin;
-  scrollbar-color: #DDD3F9 transparent;
+  scrollbar-color: #E0e0e0 transparent;
 }
 
 .chat-body .message {
@@ -204,7 +260,7 @@ footer {
   fill: #fff;
   align-self: flex-end;
   margin-bottom: 2px;
-  background: #6D4FC2;
+  background: #000000;
   border-radius: 50%;
 }
 
@@ -217,7 +273,7 @@ footer {
 }
 
 .chat-body .bot-message .message-text {
-  background: #F6F2FF;
+  background: #e0e0e0;
   border-radius: 13px 13px 13px 3px;
 } 
 
@@ -228,7 +284,7 @@ footer {
 
 .chat-body .user-message .message-text {
   color: #fff;
-  background: #6D4FC2;
+  background: #000000;
   border-radius: 13px 13px 3px 13px;
 } 
 
@@ -236,7 +292,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: #fff;
+  background: #f2f2f2;
   padding: 15px 22px 20px;
 }
 
@@ -250,7 +306,7 @@ footer {
 }
 
 .chat-footer .chat-form:focus-within {
-  outline: 2px solid #6D4FC2;
+  outline: 2px solid #000000;
 }
 
 .chat-form .message-input {
@@ -275,12 +331,12 @@ footer {
   flex-shrink: 0;
   margin-right: 6px;
   border-radius: 50%;
-  background: #6D4FC2;
+  background: #000000;
   transition: 0.2s ease;
 }
 
 .chat-form button:hover {
-  background: #593bab;
+  background: #000000;  
 }
 
 .chat-form .message-input:valid~button{
