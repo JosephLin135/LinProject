@@ -9,8 +9,8 @@
 
 body {
   width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(to bottom right, #5f6a72, #34495e, #2c3e50);
+  min-height: 200vh;
+  background: linear-gradient(to bottom right, #5f6a72, #34495e, #2c3e50, #1b2a36, #3a4a61);
   opacity: 1;
   transition: opacity 0.5s ease;
 }
@@ -25,23 +25,22 @@ header {
   text-align: left;
 }
 
-/* Make the header container a flexbox to align h1 and nav side by side */
 .header-container {
   display: flex;
-  align-items: center; /* Align items vertically */
-  justify-content: space-between; /* Push nav to the right */
+  align-items: center; 
+  justify-content: space-between;
   width: 80%;
   max-width: 1200px;
-  margin: 50px auto; /* Center the container */
+  margin: 20px auto;
+  padding: 10px 0;
 }
 
-/* Keep the title on the left */
 .title-container {
   display: flex;
   flex-direction: column;
 }
 
-/* Style the titles */
+
 .main-title-greeting {
   font-size: 50px;
   margin-bottom: 10px;
@@ -54,16 +53,16 @@ header {
 
 nav {
   position: absolute;
-  bottom: 175px;
-  left: 215px;
+  bottom: 25%;
+  left: 15%;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  flex-direction: column; /* Stack links vertically */
-  align-items: flex-end; /* Align text to the right */
-  gap: 15px; /* Space between items */
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
   padding: 0;
 }
 
@@ -73,7 +72,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #000000;
+  color: #c0c0c0;
   font-size: 20px;
   font-weight: bold;
   transition: color 0.3s;
@@ -91,37 +90,55 @@ h2 {
 .main-title-greeting {
   font-size: 120px;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 15%;
   transform: translateY(-50%);
-  color: #000000;
+  color: #c0c0c0;
 }
 
 .main-title {
   font-size: 110px;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 15%;
   transform: translateY(-50%);
-  color: #000000;
+  color: #c0c0c0;
+}
+
+.introduction {
+  font-size: 15px;
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #c0c0c0;
 }
 
 .project-description {
   font-size: 110px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 15%;
   transform: translateY(-50%);
-  color: #000000;
+  color: #c0c0c0;
+}
+
+.contact-Contact {
+  font-size: 100px;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  transform: translateY(-50%);
+  color: #c0c0c0;
 }
 
 .contact-information {
   font-size: 100px;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 15%;
   transform: translateY(-50%);
-  color: #000000;
+  color: #c0c0c0;
 }
 
 #chatbot-toggler{
@@ -142,7 +159,7 @@ h2 {
 
 #chatbot-toggler span {
   position: absolute;
-  color: #fff;
+  color: #c0c0c0;
 }
 
 .container.show-chatbot #chatbot-toggler {
@@ -201,12 +218,12 @@ h2 {
   padding: 6px;
   flex-shrink: 0;
   fill: #000000;
-  background: #fff;
+  background: #c0c0c0;
   border-radius: 50%;
 }
 
 .header-info .logo-text {
-  color: #fff;
+  color: #c0c0c0;
   font-size: 1.31rem;
   font-weight: 600;
 }
@@ -216,7 +233,7 @@ h2 {
   width: 40px;
   border: none;
   outline: none;
-  color: #fff;
+  color: #c0c0c0;
   cursor: pointer;
   font-size: 1.9rem;
   padding-top: 2px;
