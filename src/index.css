@@ -9,7 +9,7 @@
 
 body {
   width: 100%;
-  min-height: 200vh;
+  min-height: 125vh;
   background: linear-gradient(to bottom right, #5f6a72, #34495e, #2c3e50, #1b2a36, #3a4a61);
   opacity: 1;
   transition: opacity 0.5s ease;
@@ -17,6 +17,23 @@ body {
 
 body.hidden {
   opacity: 0;
+}
+
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  left: 20%;
+}
+
+.image {
+  position: absolute;
+  width: 1200px;
+  top: 20%;
+  left: 25%;
+  opacity: 0.65;
+  filter: none;
 }
 
 header {
@@ -34,6 +51,7 @@ header {
   margin: 20px auto;
   padding: 10px 0;
 }
+
 
 .title-container {
   display: flex;
@@ -53,11 +71,58 @@ header {
 
 nav {
   position: absolute;
-  bottom: 25%;
+  bottom: 20%;
   left: 15%;
 }
 
+.contact-nav {
+  position: absolute;
+  bottom: 20%;
+  left: 55%;
+}
+
 .nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  padding: 0;
+}
+
+.image-nav ul {
+  display: flex; /* Enables horizontal layout */
+  justify-content: center; /* Centers items horizontally */
+  list-style: none; /* Removes default bullet points */
+  gap: 30px;
+}
+
+.image-nav {
+  position: absolute;
+  bottom: 22%;
+  left: 55%;
+}
+
+.image-nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.image-nav a {
+  display: inline-block;
+}
+
+.image-nav .icon {
+  width: 75px;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-nav .icon:hover {
+  transform: scale(1.1);
+}
+
+.contact-links {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -70,15 +135,34 @@ nav {
   margin: 0;
 }
 
+
+.contact-links li {
+  margin: 0;
+}
+
 .nav-links a {
   text-decoration: none;
   color: #c0c0c0;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #c0c0c0;
+  font-size: 15px;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
+  color: gray;
+}
+
+
+
+.contact-links a:hover {
   color: gray;
 }
 
@@ -106,10 +190,10 @@ h2 {
 }
 
 .introduction {
-  font-size: 15px;
+  font-size: 20px;
   position: absolute;
-  top: 90%;
-  left: 10%;
+  top: 80%;
+  left: 30%;
   transform: translateY(-50%);
   color: #c0c0c0;
 }
