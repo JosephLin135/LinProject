@@ -8,8 +8,8 @@
 }
 
 body {
-  width: 100%;
-  min-height: 125vh;
+  width: 100vw;
+  min-height: 100vh;
   background: linear-gradient(to bottom right, #5f6a72, #34495e, #2c3e50, #1b2a36, #3a4a61);
   opacity: 1;
   transition: opacity 0.5s ease;
@@ -202,8 +202,8 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 65px;
-  max-width: 600px;
-  margin: 500px auto;
+  max-width: 400px;
+  margin: 325px auto;
   justify-content: center;
 }
 
