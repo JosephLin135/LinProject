@@ -7,12 +7,13 @@
   font-family: 'Rubik', serif;
 }
 
+
 body {
   width: 100%;
   min-height: 120vh;
   background: linear-gradient(to bottom right, #5f6a72, #34495e, #2c3e50, #1b2a36, #3a4a61);
-  opacity: 1;
   transition: opacity 0.5s ease;
+  overflow-x: hidden;
 }
 
 body.hidden {
@@ -24,15 +25,14 @@ body.hidden {
   align-items: center;
   justify-content: center;
   height: 50vh;
-  left: 20%;
 }
 
 .image {
-  position: absolute;
-  width: 1200px;
-  top: 20%;
-  left: 23%;
-  opacity: 0.45;
+  position: relative;
+  width: 1150px;
+  top: 50%;
+  left: 10%;
+  opacity: 0.35;
   filter: none;
 }
 
@@ -58,6 +58,11 @@ header {
   flex-direction: column;
 }
 
+.body-container {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .main-title-greeting {
   font-size: 50px;
@@ -71,7 +76,7 @@ header {
 
 nav {
   position: absolute;
-  bottom: 20%;
+  bottom: 25%;
   left: 15%;
 }
 
@@ -99,8 +104,8 @@ nav {
 
 .image-nav {
   position: absolute;
-  bottom: 20%;
-  left: 51%;
+  bottom: 10%;
+  left: 10%;
 }
 
 .image-nav li {
@@ -190,10 +195,28 @@ h2 {
 }
 
 .introduction {
+  font-size: 19px;
+  position: absolute;
+  top: 77%;
+  left: 30%;
+  transform: translateY(-50%);
+  color: #c0c0c0;
+  font-weight: bold;
+}
+
+.scroll {
   font-size: 20px;
   position: absolute;
-  top: 80%;
-  left: 30%;
+  bottom: 1%;
+  left: 45%;
+  transform: translateY(-50%);
+  color: #c1c1c1;
+}
+
+.education {
+  position: absolute;
+  bottom: -5%;
+  left: 15%;
   transform: translateY(-50%);
   color: #c0c0c0;
 }
@@ -214,7 +237,7 @@ h2 {
   border: 2px solid #c0c0c0;
   background: linear-gradient(to bottom right, #5f6a72, #34495e, #2c3e50, #1b2a36, #3a4a61);
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
@@ -222,19 +245,25 @@ h2 {
 }
 
 .box-languages {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: normal;
   text-align: center;
-  color: #c0c0c0;
+  color: #d3d3d3;
 }
 
 .box-interests {
   font-size: 15px;
   font-weight: normal;
   text-align: left;
-  color: #c0c0c0;
+  color: #d3d3d3;
 }
 
+.box-relevantCourses {
+  font-size: 15px;
+  font-weight: normal;
+  text-align: left;
+  color: #d3d3d3;
+}
 
 .project-description {
   font-size: 110px;
