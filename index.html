@@ -1,91 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="jl.png">
+    <link rel="icon" type="image" href="jl.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joseph Lin</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
   </head>
   <body>
-    <section class="image-section">
-      <img src="src/signature.png" alt="My Signature" class="image">
-  </section>
+    <section class="image-section" id="top">
+      <img src="src/signature.png" alt="My Signature" class="image" />
+    </section>
+
     <header>
       <div class="header-container">
         <div class="title-container">
-          <h1 class="main-title-greeting">Hi there! </h1>
+          <h1 class="main-title-greeting">Hi there!</h1>
           <h1 class="main-title">I'm Joseph</h1>
           <nav>
             <ul class="nav-links">
-              <li><a href="/index.html"> ➣ About Me</a></li>
+              <li><a href="#top">About Me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
               <li><a href="/project.html">My Projects</a></li>
               <li><a href="/about.html">Contacts</a></li>
             </ul>
           </nav>
         </div>
       </div>
+
       <ul class="image-nav">
-        <li><a href="src\resume.pdf" target="_blank">
-          <img src="src/resume_image.png" alt="Resume" class="icon">
-        </a></li>
-        <li><a href="mailto:linjoe135@gmail.com">
-          <img src="src/email.png" alt="Email" class="icon">
-        </a></li>
-        <li><a href="https://www.linkedin.com/in/joseph-lin135" target="_blank">
-          <img src="src/linkedin.png" alt="LinkedIn" class="icon">
-        </a></li>
+        <li>
+          <a href="src/resume.pdf" target="_blank">
+            <img src="src/resume_image.png" alt="Resume" class="icon" />
+            <span class="icon-label">Resume</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:linjoe135@gmail.com">
+            <img src="src/email.png" alt="Email" class="icon" />
+            <span class="icon-label">Email</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/joseph-lin135" target="_blank">
+            <img src="src/linkedin.png" alt="LinkedIn" class="icon" />
+            <span class="icon-label">LinkedIn</span>
+          </a>
+        </li>
       </ul>
     </header>
 
     <div class="body-container">
-    <div id="introduction">
-      <p class="introduction">Hello, my name is Joseph Lin and I am Computer Science student with a passion for web development
-      <br>and data engineering, and enjoy building scalable applications with data to drive insight.
-      <br>Currently, I am pursuing a Bachelor's degree in Computer Science and an undergraduate certificate
-      <br>for Packaging Engineering. I have worked at Horizon Blue Cross Blue Shield of New Jersey working
-      <br>as a Database Engineer Intern, where I developed optimized SQL queries to track and manage server
-      <br>operations. I'm always open to networking, learning opportunities, and collaborations - feel
-      <br>free to reach out!</p>
-    </div>
-    <div class="scroll">
-      <p class="scrollForMore">
-        View More About Me ▼
-      </p>
-    </div>
-
-
-    <div class="education">
-      <h1 class="education-title">Education</h1>
-    </div>
-
-    <div class="box-container">
-      <div class="box"><u>Languages</u>
-        <p class="box-languages">Python, Java, HTML, CSS, JavaScript, SQL, C/C++, React.js, MATLAB</p>
-      </div>
-      <div class="box"><u>Interests</u>
-        <p class="box-interests"> Front End Development, Software Engineering, Software Development, Machine Learning, Artificial Intelligence, Generative AI,
-          Cyber-Security
-        </p>
-    </div>
-      <div class="box"><u>Relevant Courses</u>
-        <p class="box-relevantCourses"> Data Structures and Algorithms, Linear Algebra, Principles of Computer Science, Object Oriented Programming in Java,
-          Data Exploration in Python, CAD for Packaging Engineering
+      <div id="introduction">
+        <p class="introduction">
+          Hello, my name is Joseph Lin and I am Computer Science student with a
+          passion for web development and data engineering, and enjoy building
+          scalable applications with data to drive insight. Currently, I am
+          pursuing a Bachelor's degree in Computer Science and an undergraduate
+          certificate for Packaging Engineering. I have worked at Horizon Blue
+          Cross Blue Shield of New Jersey working as a Database Engineer Intern,
+          where I developed optimized SQL queries to track and manage server
+          operations. I'm always open to networking, learning opportunities, and
+          collaborations - feel free to reach out!
         </p>
       </div>
-      <div class="box">Languages2</div>
-      <div class="box">Languages3</div>
-      <div class="box">Languages4</div>
+
+      <h1 class="technical-title" id="skills">Technical Competencies</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <u>Languages</u>
+          <p class="box-languages">
+            Python, Java, HTML, CSS, JavaScript, SQL, C/C++, React.js, MATLAB
+          </p>
+        </div>
+        <div class="box">
+          <u>Interests</u>
+          <p class="box-interests">
+            Front End Development, Software Engineering, Software Development,
+            Machine Learning, Artificial Intelligence, Generative AI,
+            Cyber-Security
+          </p>
+        </div>
+        <div class="box">
+          <u>Relevant Courses</u>
+          <p class="box-relevantCourses">
+            Data Structures and Algorithms, Linear Algebra, Principles of
+            Computer Science, Object Oriented Programming in Java, Data
+            Exploration in Python, CAD for Packaging Engineering
+          </p>
+        </div>
+      </div>
     </div>
 
-    <p></p>
-
-  </div>
-
-
-    </p>
     <div id="root"></div>
-  
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
